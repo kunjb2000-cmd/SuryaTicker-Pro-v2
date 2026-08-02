@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -7,83 +7,39 @@
 
 <title>SuryaTicker Pro V2</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<!-- ===========================
-     CONTROL PANEL
-=========================== -->
+<!-- Toolbar -->
 
-<div id="controlPanel">
+<div id="toolbar">
 
-<h2>SuryaTicker Pro V2</h2>
+<button id="addTicker">Ticker</button>
 
-<div class="group">
+<button id="addLive">LIVE</button>
 
-<label>Label</label>
+<button id="addLogo">Logo</button>
 
-<input
-type="text"
-id="labelInput"
-placeholder="BREAKING NEWS">
+<button id="addClock">Clock</button>
+
+<button id="saveLayout">Save</button>
 
 </div>
 
-<div class="group">
+<!-- Overlay Canvas -->
 
-<label>Scrolling Text</label>
-
-<textarea
-id="textInput"
-rows="4"
-placeholder="यहाँ अपना चलने वाला टेक्स्ट लिखें..."></textarea>
+<div id="canvas">
 
 </div>
 
-<div class="group">
-
-<button id="applyBtn">
-Apply
-</button>
-
-</div>
-
-</div>
-
-<!-- ===========================
-     TICKER
-=========================== -->
-
-<div id="ticker">
-
-<div id="breakingLabel">
-BREAKING NEWS
-</div>
-
-<div id="tickerArea">
-
-<div id="tickerText">
-
-SuryaTicker Pro V2 Started Successfully
-
-</div>
-
-</div>
-
-<div id="liveBox">
-
-LIVE
-
-</div>
-
-</div>
-
-<script src="app.js"></script>
-<script src="rss.js"></script>
+<script src="js/app.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/ticker.js"></script>
+<script src="js/rss.js"></script>
+<script src="js/storage.js"></script>
 
 </body>
-
 </html>
